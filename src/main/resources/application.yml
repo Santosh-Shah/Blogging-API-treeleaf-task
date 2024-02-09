@@ -1,0 +1,17 @@
+server:
+  port: 8082
+
+spring:
+  # JPA and Hibernate configuration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  # Data source configuration
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/blogapi
+    username: root
+    password: 4283
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
